@@ -23,6 +23,7 @@ html {
 body {
   background: var(--body-bg);
   position: relative;
+  overflow-x: hidden;
 }
 :root {
   --secondary-color: #576574;
