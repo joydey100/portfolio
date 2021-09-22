@@ -266,8 +266,7 @@ nav {
 
 /* Contact Section */
 .contact-section {
-  max-width: 90%;
-  margin: 0 auto;
+  width: 100%;
   padding: 100px 0;
   background: url("images/email-main-bg.png") var(--main-pink) no-repeat;
   background-position: 40%;
@@ -279,12 +278,16 @@ nav {
   -o-border-radius: 30px;
   text-align: center;
 }
+.contact-info {
+  width: 80%;
+  margin: 0 auto;
+}
 .contact-info p {
   color: var(--main-white);
   font-size: 16px;
 }
 .contact-info h2 {
-  font-size: 30px;
+  font-size: 28px;
   color: var(--main-white);
   margin-top: 20px;
 }
@@ -404,7 +407,7 @@ footer p {
   .banner-info h2 {
     font-size: 50px;
   }
-  .contact-info h2 {
-    font-size: 1.35rem;
+  .contact-info {
+    width: 100%;
   }
 }
