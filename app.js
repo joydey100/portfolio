@@ -62,9 +62,11 @@ dark.addEventListener("click", () => {
   if (document.body.classList.contains("dark-theme")) {
     dark.innerHTML = lightIcon;
     logo.src = "images/logo-1.png";
+    localStorage.setItem("dark-theme", true);
   } else {
     dark.innerHTML = darkIcon;
     logo.src = "images/logo.png";
+    localStorage.setItem("dark-theme", false);
   }
 });
 
@@ -116,4 +118,15 @@ scroll.addEventListener("click", () => {
     top: 0,
     behavior: "smooth",
   });
+});
+
+// Setting Database
+window.addEventListener("DOMContentLoaded", () => {
+  const getDb = localStorage.getItem("dark-theme");
+
+  if (getDb === "true") {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
 });
