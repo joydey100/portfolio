@@ -184,32 +184,20 @@ nav {
 /* Portfolio Section */
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 18px;
   margin-top: 55px;
 }
-.portfolio-item {
-  background-color: #fff;
+.portfolio-container a {
+  border: 2px solid transparent;
 }
-.portfolio-info {
-  padding: 15px;
+.portfolio-container a:hover {
+  border: 2px solid var(--main-pink);
 }
-.portfolio-info h2 {
-  margin-bottom: 10px;
-  font-weight: 600;
+.portfolio-container a img {
+  height: 100%;
+  object-fit: cover;
 }
-
-.links {
-  display: flex;
-}
-.links a {
-  margin: 18px 10px 0 0;
-  color: var(--main-pink);
-}
-.links a i {
-  font-size: 24px;
-}
-
 /* Testimonial Section */
 .testimonial-container {
   margin-top: 55px;
